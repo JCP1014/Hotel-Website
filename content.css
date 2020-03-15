@@ -1,0 +1,32 @@
+.img_a {
+	float: left;
+	position: absolute;
+	z-index: 200;
+	float: left;
+	padding: 296px 0 0 160px;
+	width: 387px;
+	height: 595px;
+	overflow: hidden;
+}
+
+.img_b {
+	float: left;
+	position: absolute;
+	z-index: 100;
+	float: left;
+	padding: 297px 0 0 437px;
+	width: 538px;
+	height: 599px;
+	overflow: hidden;
+}
+
+article {
+	float: right;
+    	padding: 110px 220px 0px 1045px;
+    	font-size: 31px;
+    	font-family: Noto Sans CJK TC;
+    	font-weight: 500;
+    	color: #FDFAE7;
+    	line-height: 45px;
+    	letter-spacing: 8px;
+}
