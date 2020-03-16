@@ -10,17 +10,17 @@ body {
 	overflow: hidden;
 }
 header{
-	font-size: 18px;
+	font-size: 10px;
 	letter-spacing: 3px;
 }
 .header_a {
 	float: right;
-	padding: 0 33px 0 0;
+	padding: 0 0 0 0;
 	display: inline-block;
 }
 .header_b {
 	float: right;
-	padding: 0 68px 0 0;
+	padding: 0 2% 0 ;
 	display: inline-block;
 }
 nav {
@@ -32,11 +32,11 @@ a{
 }
 ul {
 	list-style-type: none;
-	margin: 0 200px 0 200px;
-	padding: 30px 200px 0 200px;
+	margin: 0 10% 0 10%;
+	padding: 0.5% 3% 0 0.5%;
 	overflow: hidden;
 	background-color: #8A9B97;
-	border-width: 0 0 1px 0;
+	border-width: 0 0 2px 0;
 	border-style: solid;
 	border-color: #FDFAE7;
 }
@@ -44,29 +44,29 @@ ul {
 li {
 	float: left;
 	width: 20%;
-	letter-spacing: 8px;
+	letter-spacing: 4px;
 }
 
 li a {
 	display: block;
 	text-align: center;
-	padding: 14px 16px;
+	padding: 7% 0;
 	text-decoration: none;
 	width: 100%;
 
 }
 .nav_l {
-	font-size: 31px;
-	padding: 50px 0 0 0;
+	font-size: 23px;
+	padding: 12% 0 0 15%;
 	text-align: left;
 }
 .nav_m {
-	font-size: 64px;
+	font-size: 49px;
 	font-weight: 900;
-	text-align: center;
+	padding: 0 0 5% 12%;
 }
 .nav_r {
-	font-size: 31px;
-	padding: 50px 0 0 0;
+	font-size: 23px;
+	padding: 12% 0 0 4%;
 	text-align: right;
 }

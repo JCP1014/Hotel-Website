@@ -1,32 +1,30 @@
 .img_a {
-	float: left;
 	position: absolute;
 	z-index: 200;
 	float: left;
-	padding: 296px 0 0 160px;
-	width: 387px;
-	height: 595px;
+	padding: 15% 0 0 6.5%;
+	width: 251px;
+	height: 370px;
 	overflow: hidden;
 }
 
 .img_b {
-	float: left;
 	position: absolute;
 	z-index: 100;
 	float: left;
-	padding: 297px 0 0 437px;
-	width: 538px;
-	height: 599px;
+	padding: 15% 0 0 18.5%;
+	width: 332px;
+	height: 372px;
 	overflow: hidden;
 }
 
 article {
 	float: right;
-    	padding: 110px 220px 0px 1045px;
-    	font-size: 31px;
-    	font-family: Noto Sans CJK TC;
-    	font-weight: 500;
-    	color: #FDFAE7;
-    	line-height: 45px;
-    	letter-spacing: 8px;
+    padding: 6.5% 9% 0 45%;
+    font-size: 22px;
+    font-family: Noto Sans CJK TC;
+    font-weight: 500;
+    color: #FDFAE7;
+    line-height: 30px;
+    letter-spacing: 6px;
 }
