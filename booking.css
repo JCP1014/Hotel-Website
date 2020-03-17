@@ -25,7 +25,8 @@ section{
     background-color: #8A9B97;
     letter-spacing: 2px;
     font-size: 17px;
-    color: #FDFAE7;  
+    color: #FDFAE7;
+    cursor: pointer;
 }
 .adult{
     display: inline;
