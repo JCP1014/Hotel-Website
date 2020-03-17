@@ -48,6 +48,12 @@
 			<a class="oval_btn" href="#next">下一步</a>
 		</section>
 
+		<aside>
+			<img class="person1" id="person1" src="./img/person1.png" alt="person1">
+			<img class="person2" id="person2" src="./img/person2.png" alt="person2">
+			<img class="person3" id="person3" src="./img/person3.png" alt="person3">
+		</aside>
+
 		<script>
 			var adult_num = 0;
 			var child_num = 0;
@@ -66,11 +72,15 @@
 				{
 					adult_num += 1;
 					document.getElementById("adult_num").innerHTML = adult_num;
+					if(adult_num+child_num <= 3)
+						document.getElementById("person"+(adult_num+child_num)).className = "addPerson"+(adult_num+child_num);
 				}
 			}
 			function minus_adult() {
 				if(adult_num > 0)
 				{
+					if(adult_num+child_num <= 3)
+						document.getElementById("person"+(adult_num+child_num)).className = "removePerson"+(adult_num+child_num);
 					adult_num -= 1;
 					document.getElementById("adult_num").innerHTML = adult_num;
 				}
@@ -80,11 +90,15 @@
 				{
 					child_num += 1;
 					document.getElementById("child_num").innerHTML = child_num;
+					if(adult_num+child_num <= 3)
+						document.getElementById("person"+(adult_num+child_num)).className = "addPerson"+(adult_num+child_num);
 				}
 			}
 			function minus_child() {
 				if(child_num > 0)
 				{
+					if(adult_num+child_num <= 3)
+						document.getElementById("person"+(adult_num+child_num)).className = "removePerson"+(adult_num+child_num);
 					child_num -= 1;
 					document.getElementById("child_num").innerHTML = child_num;
 				}

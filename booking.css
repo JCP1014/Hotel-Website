@@ -9,8 +9,8 @@
     height: 30px;
 }
 section{
-    padding: 2% 0 0 13%;
-    font-size: 17px;
+    padding: 1% 0 0 13%;
+    font-size: 15px;
     letter-spacing: 3px;
     color: #FDFAE7;
 }
@@ -62,4 +62,109 @@ section{
     width: 10%;
     height: 5%;
     text-align: center;
+}
+aside{
+    padding: 0 0 0 0;
+}
+.person1{
+    position: absolute;
+	z-index: 100;
+	padding: 0 0 0 81%;
+	width: 228px;
+    height: 259px;
+    display: none;
+}
+.person2{
+    position: absolute;
+	z-index: 200;
+	padding: 0 0 0 73.5%;
+	width: 163px;
+    height: 255px;
+    display: none;
+}
+.person3{
+    position: absolute;
+	z-index: 300;
+	padding: 0 0 0 63%;
+	width: 177px;
+    height: 270px;
+    display: none;
+}
+.addPerson1{
+    position: absolute;
+	z-index: 100;
+	width: 228px;
+    height: 259px;
+    animation-name: person1_in;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+.addPerson2{
+    position: absolute;
+	z-index: 200;
+	width: 163px;
+    height: 255px;
+    animation-name: person2_in;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+.addPerson3{
+    position: absolute;
+	z-index: 300;
+	width: 177px;
+    height: 270px;
+    animation-name: person3_in;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+.removePerson1{
+    position: absolute;
+	z-index: 100;
+	width: 228px;
+    height: 259px;
+    animation-name: person1_out;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+.removePerson2{
+    position: absolute;
+	z-index: 200;
+	width: 163px;
+    height: 255px;
+    animation-name: person2_out;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+.removePerson3{
+    position: absolute;
+	z-index: 300;
+	width: 177px;
+    height: 270px;
+    animation-name: person3_out;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes person1_in {
+    from {padding: 0 0 0 100%;}
+    to{padding: 0 0 0 81%;}
+}
+@keyframes person2_in {
+    from {padding: 0 0 0 100%;}
+    to{padding: 0 0 0 73.5%;}
+}
+@keyframes person3_in {
+    from {padding: 0 0 0 100%;}
+    to{padding: 0 0 0 63%;}
+}
+@keyframes person1_out {
+    from {padding: 0 0 0 81%;}
+    to{padding: 0 0 0 100%;}
+}
+@keyframes person2_out {
+    from {padding: 0 0 0 73.5%;}
+    to{padding: 0 0 0 100%;}
+}
+@keyframes person3_out {
+    from {padding: 0 0 0 63%;}
+    to{padding: 0 0 0 100%;}
 }
