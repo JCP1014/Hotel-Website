@@ -12,15 +12,20 @@ section{
     padding: 2% 0 0 13%;
     font-size: 17px;
     letter-spacing: 3px;
+    color: #FDFAE7;
 }
 .date{
     border-radius: 50px;
     border: 2px solid #FDFAE7;
-    padding: 0.5% 0 0.5% 1%;
-    width: 25%;
+    padding: 0.5% 0 0.5% 2.5%;
+    width: 23%;
     height: 15%;
-    text-align: center;
-    font-weight: 600;     
+    text-align: left;
+    font-weight: 700;
+    background-color: #8A9B97;
+    letter-spacing: 2px;
+    font-size: 17px;
+    color: #FDFAE7;  
 }
 .adult{
     display: inline;
@@ -30,23 +35,27 @@ section{
     margin: 0 0 50% 0;
 }
 .minus{
-    font-size: 30px;
+    font-size: 32px;
     font-weight: 900;
     padding: 0 0 0 2%;
     text-align: right;
 }
 .num{
-    font-size: 28px;
+    font-size: 30px;
     font-weight: 900;
     padding: 0 0 0 1%;
 }
-.add{
-    font-size: 30px;
+.plus{
+    font-size: 32px;
     font-weight: 900;
     padding: 0 0 0 1%;
     text-align: left;
 }
 .btn{
+    cursor: pointer;
+    user-select: none;
+}
+.oval_btn{
     border-radius: 40px;
     border: 2px solid #FDFAE7;
     padding: 0.5% 3%;

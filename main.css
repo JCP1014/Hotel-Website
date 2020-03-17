@@ -1,7 +1,6 @@
 @import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
 * {
-    	font-family: 'Noto Sans TC';;
-    	color: #FDFAE7;
+		font-family: 'Noto Sans TC';
 }
 body {
 	background-color: #8A9B97;
@@ -29,6 +28,8 @@ nav {
 }
 a{
 	text-decoration: none;
+	color: #FDFAE7;
+	user-select: none;
 }
 ul {
 	list-style-type: none;

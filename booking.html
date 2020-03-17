@@ -5,8 +5,11 @@
     	<meta content="width=device-width, initial-scale=1" name="viewport">
 		<link href="./main.css" rel="stylesheet" type="text/css">
 		<link href="./booking.css" rel="stylesheet" type="text/css">
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
 	</head>
-
 	<body>
 		<header>
 			<a class="header_b" href="">註冊/登入</a>
@@ -15,34 +18,77 @@
 		
 		<nav>
 			<ul>
-  				<li><a class="nav_l" href="">關於我們</a></li>
-  				<li><a class="nav_l" href="">館內簡介</a></li>
+  				<li><a class="nav_l" href="#about">關於我們</a></li>
+  				<li><a class="nav_l" href="#introduction">館內簡介</a></li>
 				<li><a class="nav_m" href="./index.html">HOTEL</a></li>
-  				<li><a class="nav_r" href="">聯絡我們</a></li>
+  				<li><a class="nav_r" href="#contact">聯絡我們</a></li>
   				<li><a class="nav_r booking" href="./booking.html">立即訂房</a></li>
 			</ul>
 		</nav>
 
 		<section>
 			<p>您預計什麼時候入住</p>
-			<p class="date">2020/3/12-2020/3/13&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp⌵</p>
+			<!-- <p class="date">2020/3/12-2020/3/13&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp⌵</p> -->
+			<input class="date" type="text"/>
 		</section>
 		<section>
-			<p class="adult">成人</p>
-			<p class="adult minus">-</p>
-			<p class="adult num">0</p>
-			<p class="adult add">+</p>
+			<p class="adult" onclick="docume">成人</p>
+			<p class="adult minus btn" onclick="minus_adult()">-</p>
+			<p class="adult num" id="adult_num"></p>
+			<p class="adult plus btn" onclick="plus_adult()">+</p>
 		</section>
 		<section>
 			<p class="child">兒童</p>
-			<p class="child minus">-</p>
-			<p class="child num">0</p>
-			<p class="child add">+</p>
+			<p class="child minus btn" onclick="minus_child()">-</p>
+			<p class="child num" id="child_num"></p>
+			<p class="child plus btn" onclick="plus_child()">+</p>
 		</section>
 		<section>
 			<br/>
-			<a class="btn" href="">下一步</a>
+			<a class="oval_btn" href="#next">下一步</a>
 		</section>
 
+		<script>
+			var adult_num = 0;
+			var child_num = 0;
+			document.getElementById("adult_num").innerHTML = adult_num;
+			document.getElementById("child_num").innerHTML = child_num;
+			$("input.date").daterangepicker({
+				showDropdowns: true,
+				startDate: moment(),
+				minDate: moment(),
+				locale: {
+					format: "YYYY-MM-DD"
+				}
+			});
+			function plus_adult() {
+				if(adult_num < 3)
+				{
+					adult_num += 1;
+					document.getElementById("adult_num").innerHTML = adult_num;
+				}
+			}
+			function minus_adult() {
+				if(adult_num > 0)
+				{
+					adult_num -= 1;
+					document.getElementById("adult_num").innerHTML = adult_num;
+				}
+			}
+			function plus_child() {
+				if(child_num < 3)
+				{
+					child_num += 1;
+					document.getElementById("child_num").innerHTML = child_num;
+				}
+			}
+			function minus_child() {
+				if(child_num > 0)
+				{
+					child_num -= 1;
+					document.getElementById("child_num").innerHTML = child_num;
+				}
+			}
+		</script>
 	</body>
 </html>
