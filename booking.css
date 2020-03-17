@@ -69,32 +69,32 @@ aside{
 .person1{
     position: absolute;
 	z-index: 100;
-	padding: 0 0 0 81%;
-	width: 228px;
-    height: 259px;
+	padding: 0 0 0 78.5%;
+	width: 268px;
+    height: 304px;
     display: none;
 }
 .person2{
     position: absolute;
 	z-index: 200;
-	padding: 0 0 0 73.5%;
-	width: 163px;
-    height: 255px;
+	padding: 0 0 0 69.5%;
+	width: 193px;
+    height: 2p302;
     display: none;
 }
 .person3{
     position: absolute;
 	z-index: 300;
-	padding: 0 0 0 63%;
-	width: 177px;
-    height: 270px;
+	padding: 0 0 0 57%;
+	width: 210px;
+    height: 315px;
     display: none;
 }
 .addPerson1{
     position: absolute;
 	z-index: 100;
-	width: 228px;
-    height: 259px;
+	width: 268px;
+    height: 304px;
     animation-name: person1_in;
     animation-duration: 1s;
     animation-fill-mode: forwards;
@@ -102,8 +102,8 @@ aside{
 .addPerson2{
     position: absolute;
 	z-index: 200;
-	width: 163px;
-    height: 255px;
+	width: 193px;
+    height: 302px;
     animation-name: person2_in;
     animation-duration: 1s;
     animation-fill-mode: forwards;
@@ -111,8 +111,8 @@ aside{
 .addPerson3{
     position: absolute;
 	z-index: 300;
-	width: 177px;
-    height: 270px;
+	width: 210px;
+    height: 315px;
     animation-name: person3_in;
     animation-duration: 1s;
     animation-fill-mode: forwards;
@@ -120,8 +120,8 @@ aside{
 .removePerson1{
     position: absolute;
 	z-index: 100;
-	width: 228px;
-    height: 259px;
+	width: 268px;
+    height: 304px;
     animation-name: person1_out;
     animation-duration: 1s;
     animation-fill-mode: forwards;
@@ -129,8 +129,8 @@ aside{
 .removePerson2{
     position: absolute;
 	z-index: 200;
-	width: 163px;
-    height: 255px;
+	width: 193px;
+    height: 302px;
     animation-name: person2_out;
     animation-duration: 1s;
     animation-fill-mode: forwards;
@@ -138,33 +138,33 @@ aside{
 .removePerson3{
     position: absolute;
 	z-index: 300;
-	width: 177px;
-    height: 270px;
+	width: 210px;
+    height: 315px;
     animation-name: person3_out;
     animation-duration: 1s;
     animation-fill-mode: forwards;
 }
 @keyframes person1_in {
     from {padding: 0 0 0 100%;}
-    to{padding: 0 0 0 81%;}
+    to{padding: 0 0 0 78.5%;}
 }
 @keyframes person2_in {
     from {padding: 0 0 0 100%;}
-    to{padding: 0 0 0 73.5%;}
+    to{padding: 0 0 0 69.5%;}
 }
 @keyframes person3_in {
     from {padding: 0 0 0 100%;}
-    to{padding: 0 0 0 63%;}
+    to{padding: 0 0 0 57%;}
 }
 @keyframes person1_out {
-    from {padding: 0 0 0 81%;}
+    from {padding: 0 0 0 78.5%;}
     to{padding: 0 0 0 100%;}
 }
 @keyframes person2_out {
-    from {padding: 0 0 0 73.5%;}
+    from {padding: 0 0 0 69.5%;}
     to{padding: 0 0 0 100%;}
 }
 @keyframes person3_out {
-    from {padding: 0 0 0 63%;}
+    from {padding: 0 0 0 57%;}
     to{padding: 0 0 0 100%;}
 }

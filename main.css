@@ -41,7 +41,6 @@ ul {
 	border-style: solid;
 	border-color: #FDFAE7;
 }
-
 li {
 	float: left;
 	width: 20%;
@@ -54,8 +53,13 @@ li a {
 	padding: 7% 0;
 	text-decoration: none;
 	width: 100%;
+	/*transition: background-color, color 0.5s;*/
 
 }
+/*li a:active{
+	background-color: #FDFAE7;
+	color:#8A9B97;
+}*/
 .nav_l {
 	font-size: 23px;
 	padding: 12% 0 0 15%;
