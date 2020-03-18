@@ -72,15 +72,13 @@
 				{
 					adult_num += 1;
 					document.getElementById("adult_num").innerHTML = adult_num;
-					if(adult_num+child_num <= 3)
-						document.getElementById("person"+(adult_num+child_num)).className = "addPerson"+(adult_num+child_num);
+					document.getElementById("person"+adult_num).className = "addPerson"+adult_num;
 				}
 			}
 			function minus_adult() {
 				if(adult_num > 0)
 				{
-					if(adult_num+child_num <= 3)
-						document.getElementById("person"+(adult_num+child_num)).className = "removePerson"+(adult_num+child_num);
+					document.getElementById("person"+adult_num).className = "removePerson"+adult_num;
 					adult_num -= 1;
 					document.getElementById("adult_num").innerHTML = adult_num;
 				}
@@ -90,15 +88,11 @@
 				{
 					child_num += 1;
 					document.getElementById("child_num").innerHTML = child_num;
-					if(adult_num+child_num <= 3)
-						document.getElementById("person"+(adult_num+child_num)).className = "addPerson"+(adult_num+child_num);
 				}
 			}
 			function minus_child() {
 				if(child_num > 0)
 				{
-					if(adult_num+child_num <= 3)
-						document.getElementById("person"+(adult_num+child_num)).className = "removePerson"+(adult_num+child_num);
 					child_num -= 1;
 					document.getElementById("child_num").innerHTML = child_num;
 				}
