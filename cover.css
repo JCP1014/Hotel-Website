@@ -1,0 +1,232 @@
+.hide{
+    opacity: 0;
+    animation-name: appear;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+}
+img{
+    position: absolute;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+.lamp1{
+    top:-14%;
+    left: 22%;
+    width: 2%;
+    height: 30%;
+    animation-name: lamp1_far;
+}
+.lamp2{
+    top:-18%;
+    left: 35.5%;
+    width: 3%;
+    height: 29%;
+    animation-name: lamp2_far;
+}
+.lamp3{
+    top:-10%;
+    left: 49.5%;
+    width: 3%;
+    height: 32%;
+    animation-name: lamp3_far;
+}
+.lamp4{
+    top:-18%;
+    left: 62%;
+    width: 2%;
+    height: 29%;
+    animation-name: lamp4_far;
+}
+.lamp5{
+    top:-10%;
+    left: 75%;
+    width: 1.5%;
+    height: 28%;
+    animation-name: lamp5_far;
+}
+.home{
+    top:35%;
+    left: 46%;
+    width: 10%;
+    height: 6%;
+    animation-name: home_close;
+}
+.people{
+    left: 7%;
+    top: 18%;
+    width: 88%;
+    height: 82%;
+    animation-name: people_far;
+    animation-duration: 2s;
+}
+.person1{
+    left: -20%;
+    top: 48%;
+    width: 22%;
+    height: 52%;
+    animation-name: person1_in;
+}
+.person2{
+    left: 98%;
+    top: 49%;
+    width: 16%;
+    height: 51%;
+    animation-name: person2_in;
+}
+.zoomLamp1{
+    animation-name: lamp1_far;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes lamp1_far {
+    0% {
+        top: -14%;
+        left: 22%;
+    }
+    50% {
+        top: -16%;
+        left: 38%;
+    }
+    100% {
+        top: -40%;
+        left: 38%;
+    }
+}
+@keyframes lamp2_far {
+    0% {
+        top: -18%;
+        left: 35.5%;
+    }
+    50% {
+        top: -20%;
+        left: 43%;
+    }
+    100% {
+        top: -40%;
+        left: 43%;
+    }
+}
+@keyframes lamp3_far {
+    0% {
+        top: -10%;
+    }
+    50% {
+        top: -12%;
+    }
+    100% {
+        top: -40%;
+    }
+}
+@keyframes lamp4_far {
+    0% {
+        top: -18%;
+        left: 62%;
+    }
+    50% {
+        top: -20%;
+        left: 56%;
+    }
+    100% {
+        top: -40%;
+        left: 56%;
+    }
+}
+@keyframes lamp5_far {
+    0% {
+        top: -10%;
+        left: 75%;
+    }
+    50% {
+        top: -12%;
+        left: 61%;
+    }
+    100% {
+        top: -40%;
+        left: 61%;
+    }
+}
+@keyframes home_close {
+    0% {
+        top:35%;
+        left: 46%;
+        width: 10%;
+        height: 6%;
+    }
+    50% {
+        top:25%;
+        left: 38%;
+        width: 27.5%;
+        height: 18%;
+    }
+    100% {
+        top:5%;
+        left: 44.5%;
+        width: 12%;
+        height: 8%;
+    }
+}
+@keyframes people_far {
+    0% {
+        left: 7%;
+        top: 18%;
+        width: 88%;
+        height: 82%;
+    }
+    75% {
+        top: 41%;
+        left: 29%;
+        width: 47%;
+        height: 52%;
+        opacity: 100%;
+    }
+    100% {
+        top: 41%;
+        left: 29%;
+        width: 47%;
+        height: 52%;
+        opacity: 0;
+    }
+}
+@keyframes person1_in {
+    0% {
+        top: 48%;
+        left: -20%;
+    }
+    50%{
+        top: 48%;
+        left: 10%;
+    }
+    100%{
+        top: 48%;
+        left: 20%;
+    }
+}
+@keyframes person2_in {
+    0% {
+        top: 49%;
+        left: 98%;
+    }
+    50%{
+        top: 49%;
+        left: 75%;
+    }
+    100%{
+        top: 49%;
+        left: 8.5%;
+    }
+}
+@keyframes appear{
+    0%{
+        opacity: 0%;
+    }
+    49%{
+        opacity: 0%;
+    }
+    50%{
+        opacity: 100%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
