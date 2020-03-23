@@ -66,9 +66,14 @@ li a {
 	padding: 12% 0 0 15%;
 	text-align: left;
 }
+.nav_m {
+	/*font-size: 49px;
+	font-weight: 900;*/
+	padding: 0 0 5% 12%;
+}
 .nav_r {
 	font-size: 23px;
-	padding: 12% 0 0 100%;
+	padding: 12% 0 0 4%;
 	text-align: right;
 }
 .home_btn{

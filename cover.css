@@ -1,14 +1,15 @@
 .hide{
     opacity: 0;
     animation-name: appear;
-    animation-delay: 3s;
+    animation-delay: 2s;
     animation-fill-mode: forwards;
+    animation-duration: 1.5s;
 }
 img{
     position: absolute;
     animation-duration: 3s;
     animation-fill-mode: forwards;
-    animation-delay: 1s;
+    animation-delay: 0.5s;
 }
 .lamp1{
     top:-14%;
@@ -219,12 +220,6 @@ img{
 @keyframes appear{
     0%{
         opacity: 0%;
-    }
-    49%{
-        opacity: 0%;
-    }
-    50%{
-        opacity: 100%;
     }
     100%{
         opacity: 100%;
